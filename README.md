@@ -44,7 +44,8 @@ carrental/
 ├── my-booking.php                # Standard vehicle booking history page
 ├── my-booking003.php             # Decoration vehicle booking confirmation page
 ├── kalol.php                     # Display page for custom decorative promo elements
-└── contact-us.php                # General inquiry and message submission portal
+├── contact-us.php                # General inquiry and message submission portal
+└── carrental.7z                  # Compressed package containing 'assets/' and 'admin/' folders (due to large file size)
 ```
 
 ---
@@ -233,6 +234,17 @@ Follow these precise steps to get the portal up and running on your local machin
 2. Copy the `carrental` project directory.
 3. Paste it inside `C:\xampp\htdocs\`.
 4. Ensure the path is exactly: `C:\xampp\htdocs\carrental`
+
+### Step 1.5: Extract Large Assets and Admin Folders (Crucial)
+> [!IMPORTANT]
+> **Extract `carrental.7z` before launching the website:**
+> Due to high resolution images and assets, the **`admin/`** and **`assets/`** folders have been compressed into the **`carrental.7z`** archive to maintain a lightweight project size for staging.
+> 1. Open the project root folder `C:\xampp\htdocs\carrental\`.
+> 2. Locate the **`carrental.7z`** file.
+> 3. Right-click and extract its contents directly into this folder using **7-Zip** or **WinRAR**.
+> 4. Ensure that the extracted **`admin/`** and **`assets/`** folders are located directly in your root `carrental/` directory.
+> 
+> *Without this extraction, styling will be completely broken (CSS/JS files won't load), and the Administrative Control Panel will throw 404 Page Not Found errors!*
 
 ### Step 2: Start Services
 1. Open the **XAMPP Control Panel**.
